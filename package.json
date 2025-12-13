@@ -5,7 +5,7 @@
   "start": "ng serve",
   "build": "ng build",
   "build:gh": "ng build --configuration production --base-href /my-portfolio/",
-  "deploy": "npx gh-pages -d dist/test-project/browser -t true"
+  "deploy": "npx gh-pages -d dist/test-project/browser"
   },
   "private": true,
   "dependencies": {
