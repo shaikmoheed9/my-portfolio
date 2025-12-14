@@ -9,13 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent {
-  // Placeholder data for now; this can be replaced with live API calls later
- currentTemp = 29;
-
-  weatherInfo = {
-    dayTemp: 32,
-    nightTemp: 20,
-    humidity: 30,
-    windSpeed: 3
-  };
+  name = 'Moheed Shaik';
+  email = 'moheedshaik@email.com';
+  role = 'Angular Developer';
+  experience = '4+ years';
 }

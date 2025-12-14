@@ -1,25 +1,38 @@
-<div class="dashboard-container">
-  <h1>📊 Dashboard</h1>
-  <p>Welcome to the Dashboard page!</p>
-  
-  <div class="navigation-buttons">
-    <a routerLink="/" class="nav-btn">← Back to Home</a>
+<div class="page">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">SM.</div>
+
+    <nav class="nav-links">
+      <a class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="nav-item"><i class="fa-regular fa-user"></i> About</a>
+      <a class="nav-item"><i class="fa-solid fa-code"></i> Projects</a>
+      <a class="nav-item"><i class="fa-regular fa-file-lines"></i> Resume</a>
+      <a class="nav-item"><i class="fa-solid fa-blog"></i> Blogs</a>
+    </nav>
+
+    <button class="theme-btn">🌙 ⭐</button>
+  </header>
+
+  <!-- HERO (THIS WAS MISSING) -->
+<section class="hero">
+  <div class="hero-left">
+   <h1>
+  Hi There <span class="wave" [class.animate]="startWave">👋</span>
+</h1>
+
+    <h2>I'M <span>SHAIK MOHEED</span></h2>
+    <h3 class="typing">
+      {{ displayText }}
+    </h3>
+
   </div>
 
-  <div class="dashboard-content">
-    <div class="card">
-      <h3>Dashboard Feature 1</h3>
-      <p>This is your dashboard content. You can add charts, statistics, or any other information here.</p>
-    </div>
-    
-    <div class="card">
-      <h3>Dashboard Feature 2</h3>
-      <p>Another section of your dashboard. Customize this as needed for your portfolio.</p>
-    </div>
-    
-    <div class="card">
-      <h3>Dashboard Feature 3</h3>
-      <p>More dashboard content goes here. You can organize this however you like!</p>
-    </div>
+  <div class="hero-right">
+    <img src="assets/images/dev-illustration.svg" alt="Developer illustration">
   </div>
+</section>
+
+
 </div>

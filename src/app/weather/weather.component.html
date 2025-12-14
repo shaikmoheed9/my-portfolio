@@ -1,17 +1,141 @@
-<div class="weather-container">
+<div class="page">
 
-  <!-- LEFT CARD -->
-  <div class="weather-card image-card">
-    <div class="temp-text">
-      {{ currentTemp }} C
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">MS.</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="hire-btn">Hire Me</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="subtitle">ANGULAR DEVELOPER</p>
+
+    <h1>
+      I craft digital <br />
+      <span>experiences</span>
+    </h1>
+
+<p class="description">
+  Angular developer with 3+ years of experience building scalable,
+  enterprise-grade web applications with clean UI and strong architecture.
+</p>
+
+
+<div class="hero-actions">
+  <a href="#projects" class="primary-btn">View My Work</a>
+  <a href="#contact" class="secondary-btn">Get In Touch</a>
+</div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+
+    <div class="about-right">
+      <p class="section-tag">ABOUT ME</p>
+
+      <h2>
+        Building the future,<br />
+        one pixel at a time.
+      </h2>
+
+      <p>
+        Hello! I'm {{ name }}, an Angular developer with experience building
+        enterprise and product-based applications.
+      </p>
+
+      <p>
+        I enjoy working on clean UI, API integrations, and performance-focused
+        frontend architecture.
+      </p>
+
+      <div class="tech">
+        <span>Angular</span>
+        <span>TypeScript</span>
+        <span>RxJS</span>
+        <span>.NET (Basics)</span>
+        <span>REST APIs</span>
+        <span>Git</span>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- RIGHT CARD -->
-  <div class="weather-card info-card">
-    <p>Expected Temperature: Day {{ weatherInfo.dayTemp }} C & Night {{ weatherInfo.nightTemp }} C</p>
-    <p>Humidity: {{ weatherInfo.humidity }}%</p>
-    <p>Wind Speed: {{ weatherInfo.windSpeed }} KM/H</p>
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="section-tag">GET IN TOUCH</p>
+
+    <h2>
+      Let's work <span>together</span>
+    </h2>
+
+    <p class="contact-text">
+      I’m open to new opportunities and exciting projects.
+      Feel free to reach out anytime.
+    </p>
+
+<div class="email-box">
+  <span>Email me at</span><br />
+  <strong>{{ email }}</strong>
+</div>
+
+
+  </section>
+
+
+  <!-- PROJECTS -->
+<section class="projects" id="projects">
+  <p class="section-tag">PROJECTS</p>
+
+  <h2 class="projects-title">
+    Things I’ve <span>built</span>
+  </h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Contract Management System</h3>
+      <p>
+        Enterprise Angular application with role-based access,
+        document upload, API integration, and workflow automation.
+      </p>
+      <div class="project-tags">
+        <span>Angular</span>
+        <span>TypeScript</span>
+        <span>REST API</span>
+      </div>
+      <a href="#" target="_blank">View Details</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>
+        Personal portfolio built using Angular and deployed on GitHub Pages
+        with responsive design.
+      </p>
+      <div class="project-tags">
+        <span>Angular</span>
+        <span>CSS</span>
+        <span>GitHub Pages</span>
+      </div>
+      <a href="https://shaikmoheed9.github.io/my-portfolio/" target="_blank">
+        Live Demo
+      </a>
+    </div>
+
   </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 {{ name }}. All rights reserved.
+  </footer>
 
 </div>

@@ -2,91 +2,37 @@
 
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="logo">MS.</div>
+    <div class="logo">SM.</div>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <button class="hire-btn">Hire Me</button>
+    <nav class="nav-links">
+      <a class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="nav-item"><i class="fa-regular fa-user"></i> About</a>
+      <a class="nav-item"><i class="fa-solid fa-code"></i> Projects</a>
+      <a class="nav-item"><i class="fa-regular fa-file-lines"></i> Resume</a>
+      <a class="nav-item"><i class="fa-solid fa-blog"></i> Blogs</a>
     </nav>
+
+    <button class="theme-btn">🌙 ⭐</button>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <p class="subtitle">CREATIVE DEVELOPER</p>
+  <!-- HERO (THIS WAS MISSING) -->
+<section class="hero">
+  <div class="hero-left">
+   <h1>
+  Hi There <span class="wave" [class.animate]="startWave">👋</span>
+</h1>
 
-    <h1>
-      I craft digital <br />
-      <span>experiences</span>
-    </h1>
+    <h2>I'M <span>SHAIK MOHEED</span></h2>
+    <h3 class="typing">
+      {{ displayText }}
+    </h3>
 
-    <p class="description">
-      A passionate Angular developer focused on building clean, scalable,
-      and user-friendly web applications.
-    </p>
+  </div>
 
-    <div class="hero-actions">
-      <button class="primary-btn">View My Work</button>
-      <button class="secondary-btn">Get In Touch</button>
-    </div>
-  </section>
+  <div class="hero-right">
+    <img src="assets/images/dev-illustration.svg" alt="Developer illustration">
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-
-    <div class="about-right">
-      <p class="section-tag">ABOUT ME</p>
-
-      <h2>
-        Building the future,<br />
-        one pixel at a time.
-      </h2>
-
-      <p>
-        Hello! I'm {{ name }}, an Angular developer with experience building
-        enterprise and product-based applications.
-      </p>
-
-      <p>
-        I enjoy working on clean UI, API integrations, and performance-focused
-        frontend architecture.
-      </p>
-
-      <div class="tech">
-        <span>Angular</span>
-        <span>TypeScript</span>
-        <span>RxJS</span>
-        <span>.NET (Basics)</span>
-        <span>REST APIs</span>
-        <span>Git</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <p class="section-tag">GET IN TOUCH</p>
-
-    <h2>
-      Let's work <span>together</span>
-    </h2>
-
-    <p class="contact-text">
-      I’m open to new opportunities and exciting projects.
-      Feel free to reach out anytime.
-    </p>
-
-    <div class="email-box">
-      <span>Email me at</span>
-      <!-- <strong>{{ email }}</strong> -->
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    © 2025 {{ name }}. All rights reserved.
-  </footer>
 
 </div>
